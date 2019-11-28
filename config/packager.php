@@ -6,7 +6,7 @@ return [
      * The following skeleton will be downloaded for each new package.
      * Default: http://github.com/kallbuloso/packager-skeleton/archive/master.zip
      */
-    'skeleton' => 'http://github.com/kallbuloso/packager-skeleton/archive/master.zip',
+    'skeleton' => 'http://github.com/kallbuloso/packager-skeleto/archive/master.zip',
     // 'skeleto-commands' => 'http://github.com/kallbuloso/packager-skeleto-commands/archive/master.zip',
     // 'skeleto-template' => 'http://github.com/kallbuloso/packager-skeleto-template/archive/master.zip',
 
