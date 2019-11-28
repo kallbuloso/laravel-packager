@@ -62,7 +62,7 @@ class DisablePackage extends Command
     public function handle()
     {
         // Start the progress bar
-        $this->startProgressBar(2);
+        $this->startProgressBar(3);
 
         // Defining vendor/package
         $this->conveyor->vendor($this->argument('vendor'));
@@ -75,6 +75,12 @@ class DisablePackage extends Command
         // Uninstall the package
         $this->info('Uninstalling package...');
         $this->conveyor->uninstallPackage();
+        $this->makeProgress();
+
+        // remove the package directory
+        $this->info('Removing packages directory...');
+        $this->conveyor->removeDir($this->conveyor->packagePath());
+        $this->conveyor->dumpAutoloads();
         $this->makeProgress();
 
         // Finished removing the package, end of the progress bar

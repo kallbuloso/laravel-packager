@@ -65,7 +65,7 @@ class GetPackage extends Command
     public function handle()
     {
         // Start the progress bar
-        $this->startProgressBar(4);
+        $this->startProgressBar(5);
 
         // Common variables
         if ($this->option('host') == 'bitbucket') {
@@ -111,6 +111,13 @@ class GetPackage extends Command
         $this->info('Installing package...');
         $this->conveyor->installPackage();
         $this->makeProgress();
+
+        // Composer dump-autoload to identify new service provider
+        $this->info('Dumping autoloads and discovering package...');
+        $this->wrapping->addToComposer($this->conveyor->vendor(), $this->conveyor->package());
+        $this->wrapping->addToProviders($this->conveyor->vendor(), $this->conveyor->package());
+        $this->conveyor->dumpAutoloads();
+
 
         // Finished creating the package, end of the progress bar
         $this->finishProgress('Package downloaded successfully!');

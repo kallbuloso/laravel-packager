@@ -62,7 +62,7 @@ class EnablePackage extends Command
     public function handle()
     {
         // Start the progress bar
-        $this->startProgressBar(2);
+        $this->startProgressBar(3);
 
         // Defining vendor/package
         $this->conveyor->vendor($this->argument('vendor'));
@@ -76,6 +76,13 @@ class EnablePackage extends Command
         $this->info('Installing package...');
         $this->conveyor->installPackage();
         $this->makeProgress();
+
+        // Composer dump-autoload to identify new service provider
+        $this->info('Dumping autoloads and discovering package...');
+        $this->wrapping->addToComposer($this->conveyor->vendor(), $this->conveyor->package());
+        $this->wrapping->addToProviders($this->conveyor->vendor(), $this->conveyor->package());
+        $this->conveyor->dumpAutoloads();
+
 
         // Finished removing the package, end of the progress bar
         $this->finishProgress('Package enabled successfully!');
