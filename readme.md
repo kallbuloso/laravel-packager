@@ -2,6 +2,7 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
+[![Software License][ico-readme]][link-readme]
 
 # Informação muito importante!
 `kallbuloso/laravel-packager` é um pacote do Laravel que foi criado para gerar e gerenciar pacotes `(Packages)` e reutilizálos em sua aplicação Laravel. O `laravel-packager` é um pacote suportado e testado no `Laravel ^6.*`.
@@ -169,7 +170,7 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 
 ## Credits
 
-- [JeroenG][link-author]
+- [JeroenG](https://github.com/Jeroen-G)
 - [kallbuloso][link-author]
 - [All Contributors][link-contributors]
 
@@ -178,10 +179,12 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 The EU Public License. Please see [license.md](license.md) for more information.
 
 
-[ico-version]: https://poser.pugx.org/jeroen-g/laravel-packager/v/stable?format=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/jeroen-g/laravel-packager.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/kallbuloso/laravel-packager/v/stable?format=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/kallbuloso/laravel-packager.svg?style=flat-square
+[ico-readme]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/kallbuloso/laravel-packager
 [link-downloads]: https://packagist.org/packages/kallbuloso/laravel-packager
 [link-author]: https://github.com/kallbuloso
+[link-readme]: LICENSE.md
 [link-contributors]: ../../contributors]
