@@ -69,7 +69,7 @@ class Conveyor
         $this->download($zipFile = $this->makeFilename(), config('packager.skeleton'))
             ->extract($zipFile, $this->vendorPath())
             ->cleanUp($zipFile);
-        rename($this->vendorPath().'/packager-skeleton-master', $this->packagePath());
+        rename($this->vendorPath().'/packager-skeleto-master', $this->packagePath());
     }
 
     /**
