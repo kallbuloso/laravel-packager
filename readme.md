@@ -187,5 +187,5 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 [link-packagist]: https://packagist.org/packages/kallbuloso/laravel-packager
 [link-downloads]: https://packagist.org/packages/kallbuloso/laravel-packager
 [link-author]: https://github.com/kallbuloso
-[link-readme]: LICENSE.md
+[link-readme]: license.md
 [link-contributors]: ../../contributors]
