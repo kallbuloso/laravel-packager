@@ -4,9 +4,11 @@ return [
 
     /*
      * The following skeleton will be downloaded for each new package.
-     * Default: http://github.com/Jeroen-G/packager-skeleton/archive/master.zip
+     * Default: http://github.com/kallbuloso/packager-skeleton/archive/master.zip
      */
-    'skeleton' => 'http://github.com/Jeroen-G/packager-skeleton/archive/master.zip',
+    'skeleton' => 'http://github.com/kallbuloso/packager-skeleton/archive/master.zip',
+    // 'skeleto-commands' => 'http://github.com/kallbuloso/packager-skeleto-commands/archive/master.zip',
+    // 'skeleto-template' => 'http://github.com/kallbuloso/packager-skeleto-template/archive/master.zip',
 
     /*
      * When you run into issues downloading the skeleton, this might be because of

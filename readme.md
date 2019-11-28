@@ -176,10 +176,11 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 
 ## License
 
-The EU Public License. Please see [license.md](license.md) for more information.
+- MIT. Por favor leia o [arquivo de licença](license.md) para mais informações.
+- The EU Public License. Please see [license.md](license.md) for more information.
 
 
-[ico-version]: https://img.shields.io/packagist/v/kallbuloso/laravel-packager/v/stable?format=flat-square
+[ico-version]: https://img.shields.io/packagist/v/kallbuloso/laravel-packager.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/kallbuloso/laravel-packager.svg?style=flat-square
 [ico-readme]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 
