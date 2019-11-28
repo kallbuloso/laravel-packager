@@ -2,9 +2,15 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci]
 
+# Informação muito importante!
+`kallbuloso/laravel-packager` é um pacote do Laravel que foi criado para gerar e gerenciar pacotes `(Packages)` e reutilizálos em sua aplicação Laravel. O `laravel-packager` é um pacote suportado e testado no `Laravel ^6.*`.
+
+O `laravel-packager` é na verdade uma versão ligeiramente modificada de [Jeroen-G/laravel-packager](https://github.com/Jeroen-G/laravel-packager). Eu criei a minha própria versão do `laravel-packager` porque queria ter controle total sobre como os comandos são gerenciados, e também tenho minhas próprias necessidades quanto ao que preciso que o pacote faça. 
+
+Se você achar que `Jeroen-G/laravel-packager` atende às suas necessidades melhor do que `kallbuloso/laravel-packager`, por qualquer motivo, use essa. Minha versão do pacote é destinada principalmente para as minhas próprias necessidades e não pretende ser um substituto ou concorrente para o outro pacote.
+
+# Segue daqui...
 This package provides you with a simple tool to set up a new package and it will let you focus on the development of the package instead of the boilerplate.
 
 ## Installation
@@ -12,7 +18,7 @@ This package provides you with a simple tool to set up a new package and it will
 Via Composer
 
 ```bash
-$ composer require jeroen-g/laravel-packager --dev
+$ composer require kallbuloso/laravel-packager --dev
 ```
 
 If you do not run Laravel 5.5 (or higher), then add the service provider in `config/app.php`:
@@ -164,6 +170,7 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 ## Credits
 
 - [JeroenG][link-author]
+- [kallbuloso][link-author]
 - [All Contributors][link-contributors]
 
 ## License
@@ -173,12 +180,8 @@ The EU Public License. Please see [license.md](license.md) for more information.
 
 [ico-version]: https://poser.pugx.org/jeroen-g/laravel-packager/v/stable?format=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/jeroen-g/laravel-packager.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/Jeroen-G/laravel-packager/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/37218114/shield
 
-[link-packagist]: https://packagist.org/packages/jeroen-g/laravel-packager
-[link-downloads]: https://packagist.org/packages/jeroen-g/laravel-packager
-[link-travis]: https://travis-ci.org/Jeroen-G/laravel-packager
-[link-styleci]: https://styleci.io/repos/37218114
-[link-author]: https://github.com/Jeroen-G
+[link-packagist]: https://packagist.org/packages/kallbuloso/laravel-packager
+[link-downloads]: https://packagist.org/packages/kallbuloso/laravel-packager
+[link-author]: https://github.com/kallbuloso
 [link-contributors]: ../../contributors]
