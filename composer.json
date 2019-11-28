@@ -1,0 +1,48 @@
+{
+    "name": "kallbuloso/laravel-packager",
+    "description": "A cli tool for creating Laravel packages.",
+    "keywords": [
+        "Packager",
+        "Laravel",
+        "package",
+        "skeleton"
+    ],
+    "homepage": "https://github.com/kallbuloso/laravel-packager",
+    "license": "EUPL-1.1",
+    "authors": [
+        {
+            "name": "kallbuloso",
+            "email": "kallbuloso@kallbuloso.com.br",
+            "homepage": "https://github.com/kallbuloso"
+        }
+    ],
+    "require": {
+        "ext-zip": "*",
+        "illuminate/support": "~5|~6",
+        "guzzlehttp/guzzle": "~6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8",
+        "orchestra/testbench": ">=3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "kallbuloso\\Packager\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "kallbuloso\\Packager\\Tests\\": "tests"
+        }
+    },
+    "suggest": {
+        "sensiolabs/security-checker": "Required to use the security check command"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "kallbuloso\\Packager\\PackagerServiceProvider"
+            ]
+        }
+    }
+}
