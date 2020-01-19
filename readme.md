@@ -50,10 +50,20 @@ $ php artisan vendor:publish --provider="kallbuloso\Packager\PackagerServiceProv
 ```bash
 $ php artisan packager:new MyVendor MyPackage
 ```
-
 **Result:**
-The command will handle practically everything for you. It will create a packages directory, creates the vendor and package directory in it, pulls in a skeleton package, sets up composer.json and creates a service provider.
 
+O comando irá lidar com praticamente tudo para você. Ele criará um diretório de pacotes, cria o fornecedor e o diretório de pacotes, puxa um pacote básico, configura o composer.json e cria um provedor de serviços. 
+
+*Nota*
+-   após instalar, em `composer.json/repositories` acerte o caminho de onde está repositório em `url`,
+-   abra o terminal no diretório do package criado e digite o seguinte comando;
+```bash
+$ composer dump
+```
+-   em seguida com o terminal aberto no diretório raíz do projeto digite;
+```bach
+$ composer require MyVendor/MyPackage
+```
 **Options:**
 ```bash
 $ php artisan packager:new MyVendor MyPackage --i

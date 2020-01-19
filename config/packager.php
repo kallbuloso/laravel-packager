@@ -16,7 +16,12 @@ return [
      * This can be solved by setting the verification of the certificate to false.
      * Of course this means it will be less secure.
      */
-    'curl_verify_cert' => env('CURL_VERIFY', true),
+    'curl_verify_cert' => env('CURL_VERIFY', false),
+
+    /**
+     * Default path from packages
+     */
+    'packagePath' => '/../packagers',
 
     /*
      * You can set defaults for the following placeholders.

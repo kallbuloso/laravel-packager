@@ -15,7 +15,7 @@ trait FileHandler
      */
     public function packagesPath()
     {
-        return base_path('packages');
+        return base_path(config('packager.packagePath'));
     }
 
     /**

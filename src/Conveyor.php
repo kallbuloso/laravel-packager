@@ -97,7 +97,7 @@ class Conveyor
     public function installPackage()
     {
         $this->addPathRepository();
-        $this->requirePackage();
+        // $this->requirePackage();
     }
 
     public function uninstallPackage()
